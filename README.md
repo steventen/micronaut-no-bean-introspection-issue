@@ -5,7 +5,12 @@ Kotlin version: 1.9.23
 
 ### Steps to reproduce
 
-Run test in `ProjectEntityRepositoryTest`, it would produce the following error:
+Run test
+```bash
+./gradlew test
+```
+
+Or directly run the [ProjectEntityRepositoryTest](src/test/kotlin/com/stevenyue/ProjectEntityRepositoryTest.kt), it would produce `IntrospectionException` with the following error:
 
 ```
 io.micronaut.core.beans.exceptions.IntrospectionException: No bean introspection available for type [class com.stevenyue.ProjectEntity]. Ensure the class is annotated with io.micronaut.core.annotation.Introspected
