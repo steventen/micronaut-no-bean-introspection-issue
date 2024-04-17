@@ -12,7 +12,7 @@ import java.util.UUID
 @Table(name = "projects")
 @Introspected
 data class ProjectEntity(
-    @Id val id: UUID,
+    @Id val id: String,
     val name: String,
     val createdAt: LocalDateTime,
 )
